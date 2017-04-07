@@ -1,7 +1,7 @@
 ﻿/* for sticky header*/
 body {
     min-height: 800px;
-    min-width:350px;
+    min-width:320px;
     padding-top: 70px;
 }
 footer {
@@ -22,6 +22,9 @@ footer {
     margin-top: -8px;
 }
 /** style for menu bar*/
+.noPadding-side {
+    padding-left: 0;padding-right: 0;
+}
 .noPading-left {
     padding-left: 0;
 }
@@ -191,19 +194,15 @@ footer {
 
 
 
-.side-filter{
-    width:220px;
-}
 
 
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 320px) {
     body {        
-        width: 450px;
+        width: 320px;
         padding-top: 70px;
     }
     .navbar{
-        width:450px;
+        width:320px;
     }
     /*.ipipeline-logo{
         width:218px;

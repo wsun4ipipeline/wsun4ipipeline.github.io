@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 47);
+/******/ 	return __webpack_require__(__webpack_require__.s = 49);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -79,7 +79,7 @@ module.exports = React;
 "use strict";
 
 
-var bind = __webpack_require__(20);
+var bind = __webpack_require__(21);
 
 /*global toString:true*/
 
@@ -566,27 +566,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-//export const Pages = {
-//    QuoteInput: 'Quote input page',
-//    Results: 'Quote result page',
-//    Loading:' waiting for quoting result from server'
-//};
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var EnumPage;
-(function (EnumPage) {
-    EnumPage[EnumPage["QuoteInput"] = 0] = "QuoteInput";
-    EnumPage[EnumPage["Results"] = 1] = "Results";
-    EnumPage[EnumPage["Loading"] = 2] = "Loading";
-})(EnumPage = exports.EnumPage || (exports.EnumPage = {}));
-;
-
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -17675,7 +17654,28 @@ var EnumPage;
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(15)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(16)(module)))
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+//export const Pages = {
+//    QuoteInput: 'Quote input page',
+//    Results: 'Quote result page',
+//    Loading:' waiting for quoting result from server'
+//};
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var EnumPage;
+(function (EnumPage) {
+    EnumPage[EnumPage["QuoteInput"] = 0] = "QuoteInput";
+    EnumPage[EnumPage["Results"] = 1] = "Results";
+    EnumPage[EnumPage["Loading"] = 2] = "Loading";
+})(EnumPage = exports.EnumPage || (exports.EnumPage = {}));
+;
+
 
 /***/ }),
 /* 5 */
@@ -17708,74 +17708,25 @@ exports.startNewQuote = startNewQuote;
 
 "use strict";
 
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-;
-//can move to stype
-var btWidth = { width: "120px" };
-var QuoteDetailsInputs = (function (_super) {
-    __extends(QuoteDetailsInputs, _super);
-    function QuoteDetailsInputs() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    QuoteDetailsInputs.prototype.render = function () {
-        return (React.createElement("div", null,
-            React.createElement("div", { className: "col col-xs-12" },
-                React.createElement("h2", null, "Quote Details")),
-            React.createElement("div", { className: "col-xs-12" },
-                React.createElement("div", { className: "col-xs-12" },
-                    React.createElement("label", { htmlFor: "SolveFor", className: "control-label LifePipeLabel" }, " Solve For")),
-                React.createElement("div", { className: "col-xs-12" },
-                    React.createElement("div", { className: "btn-group", "data-toggle": "buttons" },
-                        React.createElement("label", { className: "btn btn-primary active", style: btWidth },
-                            React.createElement("input", { type: "radio", autoComplete: "off", name: "SolveFor", id: "SolveFor-faceAmt", checked: true }),
-                            " Face Amount"),
-                        React.createElement("label", { className: "btn btn-primary", style: btWidth },
-                            React.createElement("input", { type: "radio", autoComplete: "off", name: "SolveFor", id: "SolveFor-premium" }),
-                            " Premium")))),
-            React.createElement("div", { className: "col-xs-12" },
-                React.createElement("div", { className: "col-xs-12" },
-                    React.createElement("label", { htmlFor: "FaceAmount", className: "control-label LifePipeLabel" }, " Face Amount ")),
-                React.createElement("div", { className: "col-sm-7 col-xs-8" },
-                    React.createElement("div", { className: "input-group" },
-                        React.createElement("span", { className: "input-group-addon", id: "basic-addon-faceAmt" }, "$"),
-                        React.createElement("input", { className: "form-control", id: "FaceAmount-1", name: "FaceAmount", "aria-describedby": "basic-addon-faceAmt" }))),
-                React.createElement("div", { className: "col col-sm-7 col-xs-8" },
-                    React.createElement("div", { className: "input-group" },
-                        React.createElement("span", { className: "input-group-addon", id: "basic-addon-faceAmt" }, "$"),
-                        React.createElement("input", { className: "form-control", id: "FaceAmount-2", name: "FaceAmount", "aria-describedby": "basic-addon-faceAmt" }))),
-                React.createElement("div", { className: "col col-xs-12" },
-                    React.createElement("div", { className: "input-group" },
-                        React.createElement("button", { type: "button", className: "btn btn-sm btn-default", title: "Add more face amount" }, "Add another Face Amount")))),
-            React.createElement("div", { className: "col-xs-12" },
-                React.createElement("div", { className: "col-xs-12" },
-                    React.createElement("label", { className: "control-label LifePipeLabel" }, " Term Length(s) ")),
-                React.createElement("div", { className: "col-sm-7 col-xs-8" },
-                    React.createElement("div", { className: "btn-toolbar", role: "toolbar", "aria-label": "..." },
-                        React.createElement("div", { className: "btn-group" },
-                            React.createElement("button", { type: "button", className: "btn btn-primary active" }, "10")),
-                        React.createElement("div", { className: "btn-group" },
-                            React.createElement("button", { type: "button", className: "btn btn-primary" }, "15")),
-                        React.createElement("div", { className: "btn-group", role: "group" },
-                            React.createElement("button", { type: "button", className: "btn btn-primary active" }, "20")),
-                        React.createElement("div", { className: "btn-group", role: "group" },
-                            React.createElement("button", { type: "button", className: "btn btn-primary" }, "30")),
-                        React.createElement("div", { className: "btn-group", role: "group" },
-                            React.createElement("button", { type: "button", className: "btn btn-primary" }, "40")))))));
-    };
-    return QuoteDetailsInputs;
-}(React.Component));
-exports.QuoteDetailsInputs = QuoteDetailsInputs;
+var ClientInfoInputs_1 = __webpack_require__(36);
+exports.ClientInfoInputs = ClientInfoInputs_1.ClientInfoInputs;
+var QuoteDetailsInputs_1 = __webpack_require__(41);
+exports.QuoteDetailsInputs = QuoteDetailsInputs_1.QuoteDetailsInputs;
+var UnderwritingInputs_1 = __webpack_require__(45);
+exports.UnderwritingInputs = UnderwritingInputs_1.UnderwritingInputs;
+var Header_1 = __webpack_require__(40);
+exports.Header = Header_1.Header;
+var Footer_1 = __webpack_require__(39);
+exports.Footer = Footer_1.Footer;
+var FilterSideBar_1 = __webpack_require__(38);
+exports.FilterSideBar = FilterSideBar_1.FilterSideBar;
+var FilterPopup_1 = __webpack_require__(37);
+exports.FilterPopup = FilterPopup_1.FilterPopup;
+var QuoteInfoDisplay_1 = __webpack_require__(42);
+exports.QuoteInfoDisplay = QuoteInfoDisplay_1.QuoteInfoDisplay;
+var QuoteResultsPanel_1 = __webpack_require__(43);
+exports.QuoteResultsPanel = QuoteResultsPanel_1.QuoteResultsPanel;
 
 
 /***/ }),
@@ -17785,24 +17736,18 @@ exports.QuoteDetailsInputs = QuoteDetailsInputs;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var ClientInfoInputs_1 = __webpack_require__(35);
-exports.ClientInfoInputs = ClientInfoInputs_1.ClientInfoInputs;
-var QuoteDetailsInputs_1 = __webpack_require__(6);
-exports.QuoteDetailsInputs = QuoteDetailsInputs_1.QuoteDetailsInputs;
-var UnderwritingInputs_1 = __webpack_require__(43);
-exports.UnderwritingInputs = UnderwritingInputs_1.UnderwritingInputs;
-var Header_1 = __webpack_require__(39);
-exports.Header = Header_1.Header;
-var Footer_1 = __webpack_require__(38);
-exports.Footer = Footer_1.Footer;
-var FilterSideBar_1 = __webpack_require__(37);
-exports.FilterSideBar = FilterSideBar_1.FilterSideBar;
-var FilterPopup_1 = __webpack_require__(36);
-exports.FilterPopup = FilterPopup_1.FilterPopup;
-var QuoteInfoDisplay_1 = __webpack_require__(40);
-exports.QuoteInfoDisplay = QuoteInfoDisplay_1.QuoteInfoDisplay;
-var QuoteResultsPanel_1 = __webpack_require__(41);
-exports.QuoteResultsPanel = QuoteResultsPanel_1.QuoteResultsPanel;
+//looks the esp return 1,2,3,4 as payment options
+//let paymentOptionDisplays: IKeyValue<string> = { 1: "Yrs", 2: "Half-Yrs", 4: "Quarter", 12: "Month" }
+var paymentOptionDisplays = { 1: "Yrs", 2: "Half-Yrs", 3: "Quarter", 4: "Month" };
+exports.paymentOptionDisplays = paymentOptionDisplays;
+//export enum PaymentOptions { Annually = 1, SemiAnnually = 2, Quarterly = 4, Monthly = 12 } 
+var PaymentOptions;
+(function (PaymentOptions) {
+    PaymentOptions[PaymentOptions["Annually"] = 1] = "Annually";
+    PaymentOptions[PaymentOptions["SemiAnnually"] = 2] = "SemiAnnually";
+    PaymentOptions[PaymentOptions["Quarterly"] = 3] = "Quarterly";
+    PaymentOptions[PaymentOptions["Monthly"] = 4] = "Monthly";
+})(PaymentOptions = exports.PaymentOptions || (exports.PaymentOptions = {}));
 
 
 /***/ }),
@@ -17886,7 +17831,7 @@ module.exports = g;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(1);
-var normalizeHeaderName = __webpack_require__(65);
+var normalizeHeaderName = __webpack_require__(66);
 
 var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 var DEFAULT_CONTENT_TYPE = {
@@ -17903,10 +17848,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(16);
+    adapter = __webpack_require__(17);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(16);
+    adapter = __webpack_require__(17);
   }
   return adapter;
 }
@@ -17984,9 +17929,9 @@ module.exports = defaults;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(78);
 
 
 
@@ -18085,9 +18030,9 @@ function warning(message) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
@@ -18103,12 +18048,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(29);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
@@ -18136,6 +18081,129 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var lodash_1 = __webpack_require__(3);
+var PaymentOptions_1 = __webpack_require__(7);
+;
+//can move to stype
+var btWidth = { width: "100px" };
+var btWidthSm = { width: "50px" };
+var QuoteDFilters = (function (_super) {
+    __extends(QuoteDFilters, _super);
+    function QuoteDFilters(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = lodash_1.assign({}, _this.props.filter);
+        return _this;
+    }
+    QuoteDFilters.prototype.updateState = function (newState) {
+        this.setState(newState);
+        this.props.handleFilterUpdate(newState);
+    };
+    QuoteDFilters.prototype.handleInputChange = function (event) {
+        console.log("ClientInfoInput->handleInputChange:", event.target);
+        var target = event.target;
+        console.log("targetType:", target.type);
+        if (target.htmlFor == 'showError' && target.firstChild) {
+            var value = target.firstChild.value;
+            console.log("showError:", value);
+            if (this.state.showError != value) {
+                var newState = lodash_1.assign({}, this.state, { showError: value == "Y" });
+                this.updateState(newState);
+            }
+        }
+        else if (target.type == 'button') {
+            //let value = target.firstChild.value;
+            console.log(target.name + ":" + target.value);
+            var clickedTerm = parseInt(target.value);
+            var newPaymentOptions = lodash_1.assign([], this.state.paymentOptions);
+            var index = newPaymentOptions.indexOf(clickedTerm);
+            if (index > -1) {
+                newPaymentOptions.splice(index, 1); //remove the item
+            }
+            else {
+                newPaymentOptions.push(clickedTerm);
+            }
+            var newState = lodash_1.assign({}, this.state, { paymentOptions: newPaymentOptions });
+            this.updateState(newState);
+        }
+    };
+    QuoteDFilters.prototype.render = function () {
+        return (React.createElement("div", null,
+            React.createElement("div", { className: "col col-xs-12 noPadding-side" },
+                React.createElement("h2", null, "Filters")),
+            React.createElement("div", { className: "col-xs-12 noPadding-side" },
+                React.createElement("div", { className: "col-xs-12 noPadding-side" },
+                    React.createElement("label", { className: "control-label LifePipeLabel" }, " Show Errors")),
+                React.createElement("div", { className: "col-xs-12 noPadding-side" },
+                    React.createElement("div", { className: "btn-group", "data-toggle": "buttons" },
+                        React.createElement("label", { htmlFor: "showError", style: btWidth, className: "btn btn-primary " + (this.state.showError ? "active" : ""), onClick: this.handleInputChange.bind(this) },
+                            React.createElement("input", { type: "radio", autoComplete: "off", name: "showError", id: "showError-true", value: "Y" }),
+                            " Yes"),
+                        React.createElement("label", { htmlFor: "showError", style: btWidth, className: "btn btn-primary " + (this.state.showError ? "" : "active"), onClick: this.handleInputChange.bind(this) },
+                            React.createElement("input", { type: "radio", autoComplete: "off", name: "showError", id: "showError-false", value: "N" }),
+                            " No")))),
+            React.createElement("div", { className: "col-xs-12 noPadding-side" },
+                React.createElement("div", { className: "col-xs-12 noPadding-side" },
+                    React.createElement("label", { className: "control-label LifePipeLabel" }, " Payment Options")),
+                React.createElement("div", { className: "col-sm-7 col-xs-8 noPadding-side" },
+                    React.createElement("div", { className: "btn-toolbar", role: "toolbar", "aria-label": "..." },
+                        React.createElement("div", { className: "btn-group" },
+                            React.createElement("button", { type: "button", name: "paymentOption-1", value: PaymentOptions_1.PaymentOptions.Annually, onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.paymentOptions.indexOf(PaymentOptions_1.PaymentOptions.Annually) > -1) ? 'active' : '') }, PaymentOptions_1.paymentOptionDisplays[PaymentOptions_1.PaymentOptions.Annually])),
+                        React.createElement("div", { className: "btn-group" },
+                            React.createElement("button", { type: "button", name: "paymentOption-2", value: PaymentOptions_1.PaymentOptions.SemiAnnually, onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.paymentOptions.indexOf(PaymentOptions_1.PaymentOptions.SemiAnnually) > -1) ? 'active' : '') }, PaymentOptions_1.paymentOptionDisplays[PaymentOptions_1.PaymentOptions.SemiAnnually])),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", name: "paymentOption-4", value: PaymentOptions_1.PaymentOptions.Quarterly, onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.paymentOptions.indexOf(PaymentOptions_1.PaymentOptions.Quarterly) > -1) ? "active" : "") }, PaymentOptions_1.paymentOptionDisplays[PaymentOptions_1.PaymentOptions.Quarterly])),
+                        React.createElement("div", { className: "btn-group", role: "paymentOption-12" },
+                            React.createElement("button", { type: "button", name: "term-30", value: PaymentOptions_1.PaymentOptions.Monthly, onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.paymentOptions.indexOf(PaymentOptions_1.PaymentOptions.Monthly) > -1) ? "active" : "") }, PaymentOptions_1.paymentOptionDisplays[PaymentOptions_1.PaymentOptions.Monthly]))))),
+            React.createElement("div", { className: "col-xs-12  noPadding-side" },
+                React.createElement("div", { className: "col-xs-12  noPadding-side" },
+                    React.createElement("label", { className: "control-label LifePipeLabel" }, " Term Length(s) ")),
+                React.createElement("div", { className: "col-xs-10  noPadding-side" },
+                    React.createElement("div", { className: "btn-toolbar", role: "toolbar", "aria-label": "..." },
+                        React.createElement("div", { className: "btn-group" },
+                            React.createElement("button", { type: "button", className: "btn btn-primary active" }, "10")),
+                        React.createElement("div", { className: "btn-group" },
+                            React.createElement("button", { type: "button", className: "btn btn-primary" }, "15")),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", className: "btn btn-primary active" }, "20")),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", className: "btn btn-primary" }, "30")),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", className: "btn btn-primary" }, "40"))))),
+            React.createElement("div", { className: "col-xs-12  noPadding-side" },
+                React.createElement("div", { className: "col-xs-12  noPadding-side" },
+                    React.createElement("label", { htmlFor: "SolveFor", className: "control-label LifePipeLabel" }, " Solve For")),
+                React.createElement("div", { className: "col-xs-12  noPadding-side" },
+                    React.createElement("div", { className: "btn-group", "data-toggle": "buttons" },
+                        React.createElement("label", { className: "btn btn-primary active", style: btWidth },
+                            React.createElement("input", { type: "radio", autoComplete: "off", name: "SolveFor", id: "SolveFor-faceAmt", checked: true }),
+                            " Face Amount"),
+                        React.createElement("label", { className: "btn btn-primary", style: btWidth },
+                            React.createElement("input", { type: "radio", autoComplete: "off", name: "SolveFor", id: "SolveFor-premium" }),
+                            " Premium"))))));
+    };
+    return QuoteDFilters;
+}(React.Component));
+exports.QuoteDFilters = QuoteDFilters;
+
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -18163,19 +18231,19 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(1);
-var settle = __webpack_require__(57);
-var buildURL = __webpack_require__(60);
-var parseHeaders = __webpack_require__(66);
-var isURLSameOrigin = __webpack_require__(64);
-var createError = __webpack_require__(19);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(59);
+var settle = __webpack_require__(58);
+var buildURL = __webpack_require__(61);
+var parseHeaders = __webpack_require__(67);
+var isURLSameOrigin = __webpack_require__(65);
+var createError = __webpack_require__(20);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(60);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -18271,7 +18339,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(62);
+      var cookies = __webpack_require__(63);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -18348,7 +18416,7 @@ module.exports = function xhrAdapter(config) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18374,7 +18442,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18386,13 +18454,13 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(56);
+var enhanceError = __webpack_require__(57);
 
 /**
  * Create an Error with the specified message, config, error code, and response.
@@ -18410,7 +18478,7 @@ module.exports = function createError(message, config, code, response) {
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18428,11 +18496,11 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(77);
 
 
 /** Built-in value references. */
@@ -18442,18 +18510,18 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(68);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(25);
 /* harmony export (immutable) */ __webpack_exports__["a"] = connectAdvanced;
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -18730,11 +18798,11 @@ selectorFactory) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(25);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(26);
 /* harmony export (immutable) */ __webpack_exports__["b"] = wrapMapToPropsConstant;
 /* unused harmony export getDependsOnOwnProps */
 /* harmony export (immutable) */ __webpack_exports__["a"] = wrapMapToPropsFunc;
@@ -18808,7 +18876,7 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18832,7 +18900,7 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].shape({
 });
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18849,7 +18917,7 @@ function verifyPlainObject(value, displayName, methodName) {
 }
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18890,12 +18958,12 @@ function compose() {
 }
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = createStore;
@@ -19149,7 +19217,7 @@ function createStore(reducer, preloadedState, enhancer) {
 }
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19177,7 +19245,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19195,11 +19263,11 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_redux_1 = __webpack_require__(13);
-var QuoteInput_1 = __webpack_require__(44);
-var QuoteResults_1 = __webpack_require__(46);
-var QuoteLoading_1 = __webpack_require__(45);
-var pageItems_1 = __webpack_require__(7);
-var state_1 = __webpack_require__(3);
+var QuoteInput_1 = __webpack_require__(46);
+var QuoteResults_1 = __webpack_require__(48);
+var QuoteLoading_1 = __webpack_require__(47);
+var pageItems_1 = __webpack_require__(6);
+var state_1 = __webpack_require__(4);
 var actions_1 = __webpack_require__(5);
 var App = (function (_super) {
     __extends(App, _super);
@@ -19228,12 +19296,13 @@ exports.default = react_redux_1.connect(function (state) {
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+var PaymentOptions_1 = __webpack_require__(7);
 var defaultQuoteInputData = {
     clientName: "defaultQuoteInputQuote",
     dateOfBirth: new Date("1980-01-01"),
@@ -19242,7 +19311,7 @@ var defaultQuoteInputData = {
     companyId: "93",
     productId: [4],
     faceAmounts: [40000, 500000],
-    terms: "10,20",
+    terms: [10, 20],
     state: "PA",
     date: new Date("2017-08-30"),
     isGuaranteed: true,
@@ -19253,17 +19322,22 @@ var defaultQuoteInputData = {
     healthClass: "PP"
 };
 exports.defaultQuoteInputData = defaultQuoteInputData;
+var defaultFilter = {
+    showError: false,
+    paymentOptions: [PaymentOptions_1.PaymentOptions.Annually]
+};
+exports.defaultFilter = defaultFilter;
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var lodash_1 = __webpack_require__(4);
-var state_1 = __webpack_require__(3);
+var lodash_1 = __webpack_require__(3);
+var state_1 = __webpack_require__(4);
 var actions_1 = __webpack_require__(5);
 /**
  * Always create new state pur redux document. so it can keep the history
@@ -19321,18 +19395,18 @@ function buildGroupResult(receivedResults) {
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 //Note:must use axios 0.15.3, the newer version removed promise and can't use 'then'
-var axios_1 = __webpack_require__(50);
-var lodash_1 = __webpack_require__(4);
+var axios_1 = __webpack_require__(51);
+var lodash_1 = __webpack_require__(3);
 var utilities_1 = __webpack_require__(8);
 var actions_1 = __webpack_require__(5);
-var MockQuoteReceivedData_1 = __webpack_require__(48);
+var MockQuoteReceivedData_1 = __webpack_require__(50);
 var dataService = function (store) { return function (next) { return function (actionItem) {
     //Pass all actions through by default
     next(actionItem);
@@ -19366,6 +19440,7 @@ var dataService = function (store) { return function (next) { return function (a
                 var data = lodash_1.assign({}, actionData);
                 data.productId = actionData.productId.toString();
                 data.faceAmounts = actionData.faceAmounts.toString();
+                data.terms = actionData.terms.toString();
                 data.birthDate = utilities_1.dateUtility.getDateForJson(actionData.dateOfBirth);
                 data.date = utilities_1.dateUtility.getDateForJson(actionData.date);
                 var inputsData = { "inputs": [data] };
@@ -19401,13 +19476,13 @@ exports.default = dataService;
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = ReactDOM;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19508,7 +19583,7 @@ exports.StatesPicker = StatesPicker;
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19525,8 +19600,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var StatesPicker_1 = __webpack_require__(34);
-var lodash_1 = __webpack_require__(4);
+var StatesPicker_1 = __webpack_require__(35);
+var lodash_1 = __webpack_require__(3);
 var utilities_1 = __webpack_require__(8);
 ;
 //can move to stype
@@ -19564,7 +19639,7 @@ var ClientInfoInputs = (function (_super) {
         console.log("ClientInfoInput->handleInputChange:", event.target);
         var target = event.target;
         console.log("targetType:", target.type);
-        if (target.htmlFor == 'gender' || target.firstChild) {
+        if (target.htmlFor == 'gender' && target.firstChild) {
             var value = target.firstChild.value;
             console.log("gender:", value);
             if (this.state.gender != value) {
@@ -19628,51 +19703,6 @@ exports.ClientInfoInputs = ClientInfoInputs;
 
 
 /***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var QuoteDetailsInputs_1 = __webpack_require__(6);
-;
-var FilterPopup = (function (_super) {
-    __extends(FilterPopup, _super);
-    function FilterPopup() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    FilterPopup.prototype.render = function () {
-        return (React.createElement("div", null,
-            React.createElement("div", { className: "modal modal-fullscreen fade", id: "modal-fullscreen", tabIndex: -1, role: "dialog", "aria-labelledby": "myModalLabel", "aria-hidden": "true" },
-                React.createElement("div", { className: "modal-dialog" },
-                    React.createElement("div", { className: "modal-content" },
-                        React.createElement("div", { className: "modal-header" },
-                            React.createElement("button", { type: "button", className: "close", "data-dismiss": "modal" },
-                                React.createElement("span", { "aria-hidden": "true" }, "\u00D7"),
-                                React.createElement("span", { className: "sr-only" }, "Close")),
-                            React.createElement("h4", { className: "modal-title", id: "myModalLabel" }, "Quote Filters")),
-                        React.createElement("div", { className: "modal-body" },
-                            React.createElement(QuoteDetailsInputs_1.QuoteDetailsInputs, null)),
-                        React.createElement("div", { className: "modal-footer" },
-                            React.createElement("button", { type: "button", className: "btn btn-default", "data-dismiss": "modal" }, "Close")))))));
-    };
-    return FilterPopup;
-}(React.Component));
-exports.FilterPopup = FilterPopup;
-
-
-/***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19690,8 +19720,51 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var QuoteDetailsInputs_1 = __webpack_require__(6);
-;
+var FiltersBody_1 = __webpack_require__(15);
+var FilterPopup = (function (_super) {
+    __extends(FilterPopup, _super);
+    function FilterPopup() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    FilterPopup.prototype.render = function () {
+        return (React.createElement("div", null,
+            React.createElement("div", { className: "modal modal-fullscreen fade", id: "modal-fullscreen", tabIndex: -1, role: "dialog", "aria-labelledby": "myModalLabel", "aria-hidden": "true" },
+                React.createElement("div", { className: "modal-dialog" },
+                    React.createElement("div", { className: "modal-content" },
+                        React.createElement("div", { className: "modal-header" },
+                            React.createElement("button", { type: "button", className: "close", "data-dismiss": "modal" },
+                                React.createElement("span", { "aria-hidden": "true" }, "\u00D7"),
+                                React.createElement("span", { className: "sr-only" }, "Close")),
+                            React.createElement("h4", { className: "modal-title", id: "myModalLabel" }, "Quote Filters")),
+                        React.createElement("div", { className: "modal-body" },
+                            React.createElement(FiltersBody_1.QuoteDFilters, { filter: this.props.filter, handleFilterUpdate: this.props.handleFilterUpdate })),
+                        React.createElement("div", { className: "modal-footer" },
+                            React.createElement("button", { type: "button", className: "btn btn-default", "data-dismiss": "modal" }, "Close")))))));
+    };
+    return FilterPopup;
+}(React.Component));
+exports.FilterPopup = FilterPopup;
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var FiltersBody_1 = __webpack_require__(15);
 var FilterSideBar = (function (_super) {
     __extends(FilterSideBar, _super);
     function FilterSideBar() {
@@ -19699,7 +19772,7 @@ var FilterSideBar = (function (_super) {
     }
     FilterSideBar.prototype.render = function () {
         return (React.createElement("div", null,
-            React.createElement(QuoteDetailsInputs_1.QuoteDetailsInputs, null)));
+            React.createElement(FiltersBody_1.QuoteDFilters, { filter: this.props.filter, handleFilterUpdate: this.props.handleFilterUpdate })));
     };
     return FilterSideBar;
 }(React.Component));
@@ -19707,7 +19780,7 @@ exports.FilterSideBar = FilterSideBar;
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19741,7 +19814,7 @@ exports.Footer = Footer;
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19758,7 +19831,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var state_1 = __webpack_require__(3);
+var state_1 = __webpack_require__(4);
 ;
 var Header = (function (_super) {
     __extends(Header, _super);
@@ -19829,7 +19902,131 @@ exports.Header = Header;
 
 
 /***/ }),
-/* 40 */
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var lodash_1 = __webpack_require__(3);
+;
+//can move to stype
+var btWidth = { width: "120px" };
+var QuoteDetailsInputs = (function (_super) {
+    __extends(QuoteDetailsInputs, _super);
+    function QuoteDetailsInputs(props) {
+        var _this = _super.call(this, props) || this;
+        var inputData = props.quoteInputData;
+        _this.state = lodash_1.assign({}, inputData);
+        return _this;
+    }
+    QuoteDetailsInputs.prototype.updateState = function (newState) {
+        this.setState(newState);
+        this.props.handleQuoteInputUpdate(newState);
+    };
+    QuoteDetailsInputs.prototype.handleInputChange = function (event) {
+        console.log("ClientInfoInput->handleInputChange:", event.target);
+        var target = event.target;
+        console.log("targetType:", target.type);
+        if (target.type == 'button') {
+            //let value = target.firstChild.value;
+            console.log(target.name + ":" + target.value);
+            var clickedTerm = parseInt(target.value);
+            var terms = lodash_1.assign([], this.state.terms);
+            var index = terms.indexOf(clickedTerm);
+            if (index > -1) {
+                terms.splice(index, 1); //remove the item
+            }
+            else {
+                terms.push(clickedTerm);
+            }
+            var newState = lodash_1.assign({}, this.state, { terms: terms });
+            this.updateState(newState);
+        }
+        else {
+            var value = target.type === 'checkbox' ? target.checked : target.value;
+            console.log(target.name + ":", value);
+            //todo, refactor hardcode
+            if ((target.name == "FaceAmount0") || (target.name == "FaceAmount1")) {
+                var faceAmts = lodash_1.assign([], this.state.faceAmounts);
+                (target.name == "FaceAmount0") ? faceAmts[0] = value : faceAmts[1] = value;
+                var newState = lodash_1.assign({}, this.state, { faceAmounts: faceAmts });
+                this.updateState(newState);
+            }
+            else {
+                if (this.state[target.name] != value) {
+                    var newState = lodash_1.assign({}, this.state, (_a = {}, _a[target.name] = value, _a));
+                    this.updateState(newState);
+                }
+            }
+        }
+        var _a;
+    };
+    QuoteDetailsInputs.prototype.render = function () {
+        var terms = this.props.quoteInputData.terms;
+        console.log("QuoteDetailsInput=>selectedTerms:", terms);
+        return (React.createElement("div", null,
+            React.createElement("div", { className: "col col-xs-12" },
+                React.createElement("h2", null, "Quote Details")),
+            React.createElement("div", { className: "col-xs-12" },
+                React.createElement("div", { className: "col-xs-12" },
+                    React.createElement("label", { htmlFor: "SolveFor", className: "control-label LifePipeLabel" }, " Solve For")),
+                React.createElement("div", { className: "col-xs-12" },
+                    React.createElement("div", { className: "btn-group", "data-toggle": "buttons" },
+                        React.createElement("label", { className: "btn btn-primary active", style: btWidth },
+                            React.createElement("input", { type: "radio", autoComplete: "off", name: "SolveFor", id: "SolveFor-faceAmt", checked: true }),
+                            " Face Amount"),
+                        React.createElement("label", { className: "btn btn-primary", style: btWidth },
+                            React.createElement("input", { type: "radio", autoComplete: "off", name: "SolveFor", id: "SolveFor-premium" }),
+                            " Premium")))),
+            React.createElement("div", { className: "col-xs-12" },
+                React.createElement("div", { className: "col-xs-12" },
+                    React.createElement("label", { htmlFor: "FaceAmount", className: "control-label LifePipeLabel" }, " Face Amount ")),
+                React.createElement("div", { className: "col-sm-7 col-xs-8" },
+                    React.createElement("div", { className: "input-group" },
+                        React.createElement("span", { className: "input-group-addon", id: "basic-addon-faceAmt" }, "$"),
+                        React.createElement("input", { className: "form-control", id: "FaceAmount-0", name: "FaceAmount0", "aria-describedby": "basic-addon-faceAmt", value: this.state.faceAmounts[0] ? this.state.faceAmounts[0] : "", onChange: this.handleInputChange.bind(this) }))),
+                React.createElement("div", { className: "col col-sm-7 col-xs-8" },
+                    React.createElement("div", { className: "input-group" },
+                        React.createElement("span", { className: "input-group-addon", id: "basic-addon-faceAmt" }, "$"),
+                        React.createElement("input", { className: "form-control", id: "FaceAmount-1", name: "FaceAmount1", "aria-describedby": "basic-addon-faceAmt", value: this.state.faceAmounts[1] ? this.state.faceAmounts[1] : "", onChange: this.handleInputChange.bind(this) }))),
+                React.createElement("div", { className: "col col-xs-12" },
+                    React.createElement("div", { className: "input-group" },
+                        React.createElement("button", { type: "button", className: "btn btn-sm btn-default", title: "Add more face amount" }, "Add another Face Amount")))),
+            React.createElement("div", { className: "col-xs-12" },
+                React.createElement("div", { className: "col-xs-12" },
+                    React.createElement("label", { className: "control-label LifePipeLabel" }, " Term Length(s) ")),
+                React.createElement("div", { className: "col-sm-7 col-xs-8" },
+                    React.createElement("div", { className: "btn-toolbar", role: "toolbar", "aria-label": "..." },
+                        React.createElement("div", { className: "btn-group" },
+                            React.createElement("button", { type: "button", name: "term-10", value: "10", onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.terms.indexOf(10) > -1) ? 'active' : '') }, "10")),
+                        React.createElement("div", { className: "btn-group" },
+                            React.createElement("button", { type: "button", name: "term-15", value: "15", onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.terms.indexOf(15) > -1) ? 'active' : '') }, "15")),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", name: "term-20", value: "20", onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.terms.indexOf(20) > -1) ? "active" : "") }, "20")),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", name: "term-30", value: "30", onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.terms.indexOf(30) > -1) ? "active" : "") }, "30")),
+                        React.createElement("div", { className: "btn-group", role: "group" },
+                            React.createElement("button", { type: "button", name: "term-40", value: "40", onClick: this.handleInputChange.bind(this), className: "btn btn-primary " + ((this.state.terms.indexOf(40) > -1) ? "active" : "") }, "40")))))));
+    };
+    return QuoteDetailsInputs;
+}(React.Component));
+exports.QuoteDetailsInputs = QuoteDetailsInputs;
+
+
+/***/ }),
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19854,10 +20051,20 @@ var QuoteInfoDisplay = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     QuoteInfoDisplay.prototype.render = function () {
+        var quoteInputdata = this.props.quoteInputdata;
         return (React.createElement("div", { className: " row col-sm-12 col-xs-12 LifePipeLabel" },
             React.createElement("div", { className: " col-sm-8 col-xs-10" },
-                React.createElement("div", { className: "" }, "  Charlie Adams "),
-                React.createElement("div", null, " 28yrs old - Male - Maine")),
+                React.createElement("div", { className: "" },
+                    "  ",
+                    quoteInputdata.clientName ? quoteInputdata.clientName : "- -",
+                    " "),
+                React.createElement("div", null,
+                    " ",
+                    quoteInputdata.age,
+                    "yrs old -  ",
+                    quoteInputdata.gender == "M" ? "Male" : (quoteInputdata.gender == "F" ? "Female" : "unisex"),
+                    " - ",
+                    quoteInputdata.state)),
             React.createElement("div", { className: "col-sm-4 col-xs-2" },
                 React.createElement("span", { className: "glyphicon glyphicon-pencil pull-right", style: iconStyle }))));
     };
@@ -19867,7 +20074,7 @@ exports.QuoteInfoDisplay = QuoteInfoDisplay;
 
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19884,7 +20091,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var QuoteResultsProductRow_1 = __webpack_require__(42);
+var QuoteResultsProductRow_1 = __webpack_require__(44);
 ;
 var QuoteResultsPanel = (function (_super) {
     __extends(QuoteResultsPanel, _super);
@@ -19892,13 +20099,16 @@ var QuoteResultsPanel = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     QuoteResultsPanel.prototype.render = function () {
+        var _this = this;
         var _a = this.props.groupDataItems, groupKey = _a.groupKey, groupName = _a.groupName, groupDataItems = _a.groupDataItems;
-        return (React.createElement("div", { className: "panel panel-default" },
+        return (React.createElement("div", { className: "panel panel-default", key: groupKey },
             React.createElement("div", { className: "panel-heading" },
                 React.createElement("a", { "data-toggle": "collapse", href: "#collapse-" + groupKey },
                     React.createElement("h4", { className: "panel-title" }, groupName))),
             React.createElement("div", { id: "collapse-" + groupKey, className: "panel-collapse collapse in" }, groupDataItems.map(function (dataItem) {
-                return React.createElement(QuoteResultsProductRow_1.QuoteResultsProductRow, { dataItem: dataItem });
+                if (_this.props.filter.paymentOptions.indexOf(dataItem.input.paymentOption) > -1) {
+                    return React.createElement(QuoteResultsProductRow_1.QuoteResultsProductRow, { filter: _this.props.filter, dataItem: dataItem });
+                }
             }))));
     };
     return QuoteResultsPanel;
@@ -19907,7 +20117,7 @@ exports.QuoteResultsPanel = QuoteResultsPanel;
 
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19924,7 +20134,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var PaymentOptions_1 = __webpack_require__(49);
+var PaymentOptions_1 = __webpack_require__(7);
 var utilities_1 = __webpack_require__(8);
 ;
 var priceTextStyle = { fontSize: "2em", fontWeight: "bold" };
@@ -19937,7 +20147,7 @@ var QuoteResultsProductRow = (function (_super) {
         var dataItem = this.props.dataItem;
         var carrierLogo = "dist/Images/carriers/" + utilities_1.numberUtility.pad(dataItem.input.companyId, 5) + "_sm_logo.gif";
         if (dataItem.error) {
-            return (React.createElement("div", null,
+            return (React.createElement("div", { className: this.props.filter.showError ? "" : "hidden", key: dataItem.recId },
                 React.createElement("div", { className: "panel-footer" },
                     " companyId: ",
                     dataItem.input.companyId,
@@ -19950,7 +20160,7 @@ var QuoteResultsProductRow = (function (_super) {
                         dataItem.error,
                         " "))));
         }
-        return (React.createElement("div", null,
+        return (React.createElement("div", { key: dataItem.recId },
             React.createElement("div", { className: "panel-footer" }, dataItem.productVersionInfo.name),
             React.createElement("div", { className: "panel-body" },
                 React.createElement("div", { className: "col-xs-6" },
@@ -19984,7 +20194,7 @@ exports.QuoteResultsProductRow = QuoteResultsProductRow;
 
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20056,7 +20266,7 @@ exports.UnderwritingInputs = UnderwritingInputs;
 
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20073,8 +20283,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var lodash_1 = __webpack_require__(4);
-var _1 = __webpack_require__(7);
+var lodash_1 = __webpack_require__(3);
+var _1 = __webpack_require__(6);
 ;
 var QuoteInput = (function (_super) {
     __extends(QuoteInput, _super);
@@ -20088,8 +20298,8 @@ var QuoteInput = (function (_super) {
         var inputActionData = this.state;
         this.props.submitQuote(inputActionData);
     };
-    QuoteInput.prototype.handleClientInfoUpdate = function (data) {
-        console.log("QuoteInput->handleClientInfoUpdate", data);
+    QuoteInput.prototype.handleQuoteInputUpdate = function (data) {
+        console.log("QuoteInput->handleQuoteInputUpdate", data);
         var newState = lodash_1.assign({}, this.state, data);
         this.setState(newState);
     };
@@ -20099,9 +20309,9 @@ var QuoteInput = (function (_super) {
             React.createElement("div", { className: "container" },
                 React.createElement("div", { className: "col-sm-offset-2" },
                     React.createElement("form", null,
-                        React.createElement(_1.ClientInfoInputs, { quoteInputData: this.state, handleClientInfoUpdate: this.handleClientInfoUpdate.bind(this) }),
+                        React.createElement(_1.ClientInfoInputs, { quoteInputData: this.state, handleClientInfoUpdate: this.handleQuoteInputUpdate.bind(this) }),
                         React.createElement(_1.UnderwritingInputs, null),
-                        React.createElement(_1.QuoteDetailsInputs, null),
+                        React.createElement(_1.QuoteDetailsInputs, { quoteInputData: this.state, handleQuoteInputUpdate: this.handleQuoteInputUpdate.bind(this) }),
                         React.createElement("div", { className: "col col-xs-12" }),
                         React.createElement("div", { className: "col container-fluid" },
                             React.createElement("div", { className: " col-xs-5" },
@@ -20116,7 +20326,7 @@ exports.QuoteInput = QuoteInput;
 
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20154,7 +20364,7 @@ exports.QuoteLoading = QuoteLoading;
 
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20171,24 +20381,34 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var _1 = __webpack_require__(7);
+var lodash_1 = __webpack_require__(3);
+var _1 = __webpack_require__(6);
 ;
 var iconBarPadding = { padding: "5px" };
 var iconBarTopBorder = { borderTop: "1px solid gray", padding: "5px" };
 var QuoteResults = (function (_super) {
     __extends(QuoteResults, _super);
-    function QuoteResults() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function QuoteResults(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = lodash_1.assign({}, props.state.filters); //todo, double check if this state need be readonly too.
+        return _this;
     }
+    QuoteResults.prototype.handleFilterUpdate = function (filter) {
+        console.log("QuoteResult->handleFilterUpdate:", filter);
+        //todo
+        this.setState(filter);
+    };
     QuoteResults.prototype.render = function () {
+        var _this = this;
         var groupResults = this.props.state.groupedResults;
         var groupResultsKeys = Object.getOwnPropertyNames(groupResults);
+        console.log("QuoteResults=>render():groupResultsKeys:", groupResultsKeys);
         return (React.createElement("div", null,
             React.createElement("div", { className: "container-fluid" },
-                React.createElement("div", { className: "col-sm-4 col-md-3  hidden-xs ", role: "navigation" },
-                    React.createElement(_1.FilterSideBar, null)),
+                React.createElement("div", { className: "col-sm-4 col-md-3  hidden-xs noPadding-right ", role: "navigation" },
+                    React.createElement(_1.FilterSideBar, { filter: this.state, handleFilterUpdate: this.handleFilterUpdate.bind(this) })),
                 React.createElement("div", { className: "col-sm-8  col-md-9  main" },
-                    React.createElement(_1.QuoteInfoDisplay, null),
+                    React.createElement(_1.QuoteInfoDisplay, { quoteInputdata: this.props.state.quoteInputData }),
                     React.createElement("div", { className: "col-xs-12", style: iconBarPadding },
                         React.createElement("div", { className: "col-xs-12", style: iconBarTopBorder }),
                         React.createElement("div", { className: "col-xs-12 noPading-right" },
@@ -20203,9 +20423,9 @@ var QuoteResults = (function (_super) {
                                     " Sort")))),
                     React.createElement("div", { className: "col-xs-12 panel-group" }, groupResultsKeys.map(function (groupKey) {
                         var dataItems = groupResults[groupKey];
-                        return React.createElement(_1.QuoteResultsPanel, { groupDataItems: dataItems });
+                        return React.createElement(_1.QuoteResultsPanel, { groupDataItems: dataItems, filter: _this.state });
                     }))),
-                React.createElement(_1.FilterPopup, null))));
+                React.createElement(_1.FilterPopup, { filter: this.state, handleFilterUpdate: this.handleFilterUpdate.bind(this) }))));
     };
     return QuoteResults;
 }(React.Component));
@@ -20213,7 +20433,7 @@ exports.QuoteResults = QuoteResults;
 
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20223,17 +20443,17 @@ exports.QuoteResults = QuoteResults;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(33);
+var ReactDOM = __webpack_require__(34);
 var redux_1 = __webpack_require__(14);
 var react_redux_1 = __webpack_require__(13);
-var state_1 = __webpack_require__(3);
-var QuoteInputData_1 = __webpack_require__(30);
-var reducers_1 = __webpack_require__(31);
-var APP_1 = __webpack_require__(29);
-var dataService_1 = __webpack_require__(32);
+var state_1 = __webpack_require__(4);
+var QuoteInputData_1 = __webpack_require__(31);
+var reducers_1 = __webpack_require__(32);
+var APP_1 = __webpack_require__(30);
+var dataService_1 = __webpack_require__(33);
 //const initResultsData: IQuoteReceivedDatas = { result: [] }
 var initGroupdResults = {};
-var initAppState = { currentpage: state_1.EnumPage.QuoteInput, quoteInputData: QuoteInputData_1.defaultQuoteInputData, groupedResults: initGroupdResults };
+var initAppState = { currentpage: state_1.EnumPage.QuoteInput, quoteInputData: QuoteInputData_1.defaultQuoteInputData, groupedResults: initGroupdResults, filters: QuoteInputData_1.defaultFilter };
 var store = redux_1.createStore(reducers_1.reducers, initAppState, redux_1.applyMiddleware(dataService_1.default));
 ReactDOM.render(React.createElement("div", null,
     React.createElement(react_redux_1.Provider, { store: store },
@@ -20241,7 +20461,7 @@ ReactDOM.render(React.createElement("div", null,
 
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20888,39 +21108,21 @@ exports.mockQuoteReceivedDatas = mockQuoteReceivedDatas;
 
 
 /***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var paymentOptionDisplays = { 1: "Yrs", 2: "half-Yrs", 3: "Quarter", 4: "Month" };
-exports.paymentOptionDisplays = paymentOptionDisplays;
-var PaymentOptions;
-(function (PaymentOptions) {
-    PaymentOptions[PaymentOptions["Annually"] = 1] = "Annually";
-    PaymentOptions[PaymentOptions["SemiAnnually"] = 2] = "SemiAnnually";
-    PaymentOptions[PaymentOptions["Quarterly"] = 4] = "Quarterly";
-    PaymentOptions[PaymentOptions["Monthly"] = 12] = "Monthly";
-})(PaymentOptions = exports.PaymentOptions || (exports.PaymentOptions = {}));
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(51);
-
-/***/ }),
 /* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(52);
+
+/***/ }),
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(1);
-var bind = __webpack_require__(20);
-var Axios = __webpack_require__(53);
+var bind = __webpack_require__(21);
+var Axios = __webpack_require__(54);
 var defaults = __webpack_require__(10);
 
 /**
@@ -20954,15 +21156,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(17);
-axios.CancelToken = __webpack_require__(52);
-axios.isCancel = __webpack_require__(18);
+axios.Cancel = __webpack_require__(18);
+axios.CancelToken = __webpack_require__(53);
+axios.isCancel = __webpack_require__(19);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(67);
+axios.spread = __webpack_require__(68);
 
 module.exports = axios;
 
@@ -20971,13 +21173,13 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(17);
+var Cancel = __webpack_require__(18);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -21035,7 +21237,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21043,10 +21245,10 @@ module.exports = CancelToken;
 
 var defaults = __webpack_require__(10);
 var utils = __webpack_require__(1);
-var InterceptorManager = __webpack_require__(54);
-var dispatchRequest = __webpack_require__(55);
-var isAbsoluteURL = __webpack_require__(63);
-var combineURLs = __webpack_require__(61);
+var InterceptorManager = __webpack_require__(55);
+var dispatchRequest = __webpack_require__(56);
+var isAbsoluteURL = __webpack_require__(64);
+var combineURLs = __webpack_require__(62);
 
 /**
  * Create a new instance of Axios
@@ -21127,7 +21329,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21186,15 +21388,15 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(1);
-var transformData = __webpack_require__(58);
-var isCancel = __webpack_require__(18);
+var transformData = __webpack_require__(59);
+var isCancel = __webpack_require__(19);
 var defaults = __webpack_require__(10);
 
 /**
@@ -21272,7 +21474,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21298,13 +21500,13 @@ module.exports = function enhanceError(error, config, code, response) {
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(19);
+var createError = __webpack_require__(20);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -21330,7 +21532,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21357,7 +21559,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21400,7 +21602,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21475,7 +21677,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21494,7 +21696,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21554,7 +21756,7 @@ module.exports = (
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21575,7 +21777,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21650,7 +21852,7 @@ module.exports = (
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21669,7 +21871,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21713,7 +21915,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21747,7 +21949,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21804,7 +22006,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21863,13 +22065,13 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(75);
 
 
 
@@ -21901,7 +22103,7 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21913,11 +22115,11 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(9)))
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(76);
 
 
 /** Built-in value references. */
@@ -21927,11 +22129,11 @@ var getPrototype = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__overArg_js
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(22);
 
 
 /** Used for built-in method references. */
@@ -21981,7 +22183,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22010,7 +22212,7 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22032,11 +22234,11 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(72);
 
 
 /** Detect free variable `self`. */
@@ -22049,7 +22251,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22085,13 +22287,13 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_PropTypes__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_PropTypes__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Provider; });
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22164,16 +22366,16 @@ Provider.displayName = 'Provider';
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(84);
 /* unused harmony export createConnect */
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -22280,12 +22482,12 @@ function createConnect() {
 /* harmony default export */ __webpack_exports__["a"] = (createConnect());
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(24);
 /* unused harmony export whenMapDispatchToPropsIsFunction */
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
@@ -22311,11 +22513,11 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(24);
 /* unused harmony export whenMapStateToPropsIsFunction */
 /* unused harmony export whenMapStateToPropsIsMissing */
 
@@ -22333,11 +22535,11 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(25);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(26);
 /* unused harmony export defaultMergeProps */
 /* unused harmony export wrapMergePropsFunc */
 /* unused harmony export whenMergePropsIsFunction */
@@ -22390,11 +22592,11 @@ function whenMergePropsIsOmitted(mergeProps) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(84);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(85);
 /* unused harmony export impureFinalPropsSelectorFactory */
 /* unused harmony export pureFinalPropsSelectorFactory */
 /* harmony export (immutable) */ __webpack_exports__["a"] = finalPropsSelectorFactory;
@@ -22503,7 +22705,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22528,7 +22730,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 }
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22624,7 +22826,7 @@ var Subscription = function () {
 
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22661,11 +22863,11 @@ function shallowEqual(objA, objB) {
 }
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(27);
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyMiddleware;
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -22717,7 +22919,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22771,13 +22973,13 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(27);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(29);
 /* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
 
 
@@ -22911,14 +23113,14 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(91);
+module.exports = __webpack_require__(92);
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22928,7 +23130,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(92);
+var _ponyfill = __webpack_require__(93);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -22951,10 +23153,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(15)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(16)(module)))
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
