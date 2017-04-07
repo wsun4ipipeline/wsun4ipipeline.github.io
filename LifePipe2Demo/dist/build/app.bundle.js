@@ -19304,7 +19304,7 @@ exports.default = react_redux_1.connect(function (state) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var PaymentOptions_1 = __webpack_require__(7);
 var defaultQuoteInputData = {
-    clientName: "defaultQuoteInputQuote",
+    clientName: "test clinet",
     dateOfBirth: new Date("1980-01-01"),
     age: 37,
     gender: "F",
