@@ -17,7 +17,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script type="text/javascript">
+        window.global = {};
+    </script>
 </head>
 <body>
     <div id="root"></div>
@@ -50,7 +52,10 @@
 
             $('input[name="dob"]').on('apply.daterangepicker', function (ev, picker) {
                 $(this).val(picker.startDate.format('MM/DD/YYYY'));
-                $(this).onchange();
+               // $(this).onchange();
+               
+                let data = { dateOfBirth: new Date(picker.startDate.format('YYYY-MM-DD')) };
+                window.global.updatequoteInputData(data,false);
             });
 
             $('input[name="dob"]').on('cancel.daterangepicker', function (ev, picker) {
@@ -61,6 +66,9 @@
             //$("#btnGetResult").on('click', function () {
             //    window.location = "results.html";
             //})
+          
+           // window.global.myData = { "name": "test" };
+            console.log(window.global);
         });
 
     </script>
