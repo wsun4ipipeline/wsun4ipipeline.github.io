@@ -7,7 +7,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      <title>NGSD to LifePipe2 Demo</title>
+      <title>CPL/NGSD to LifePipe2 Demo</title>
+	      <link rel="stylesheet" type="text/css" href="https://www.colonialpenn.com/content/cpl/styles/style.css" />
     </head>
     <!-- Bootstrap -->
 <link href="./dist/vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -58,7 +59,7 @@
                 }
             }
 
-            h1.textContent = "LifePIpe2-NGSD-Demo-"+(hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+            h1.textContent = "LifePipe2Demo-" +(hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
 
             timer();
         }
@@ -194,6 +195,72 @@
     <!-- STYLES -->
 <link href="ngsd/runtime-c964f4eae0366bf7e983.css" rel="stylesheet">
  <body >
+   <div id="siteHeader">
+            <a href="/"> <img src="https://www.colonialpenn.com/media/244192/header_logo.jpg" alt="Colonial Penn Life Insurance Logo" title="Colonial Penn Life Insurance Logo" id="headerLogo" /> </a>
+            <div id="headerLinks">
+                <ul>
+                    <li> <a href="http://espanol.colonialpenn.com" target="_blank" onclick="dataLayer.push({'event': 'GAevent', 'eventCategory':'Espanol', 'eventAction':'Header', 'eventLabel':'Espanol Link'});">Espa&#241;ol</a> </li>
+                    <li> <a href="https://www.mycolonialpenn.com" target="_blank">Customer Login</a> </li>
+                    <li> <a href="https://newyork.colonialpenn.com/home-ny" target="_blank">NY Residents</a> </li>
+                </ul>
+            </div>
+            <div id="phoneNumbers">
+                <p>
+                    Questions? Call 1-877-877-8052
+                    <br /> <span class="phone-numbers-small"> New York residents call 1-877-891-0915</span>
+                </p>
+            </div>
+            <div id="siteMainNavigationContainer">
+                <ul id="siteMainNavigation">
+                    <li>
+                        <a href="/">Home</a>
+                        <ul id="siteSubNavigation"></ul>
+                    </li>
+                    <li>
+                        <a href="https://www.colonialpenn.com/products/">Our Products</a>
+                        <ul id="siteSubNavigation">
+                            <li> <a href="https://www.colonialpenn.com/products/guaranteed-acceptance/">Guaranteed Acceptance Life Insurance</a> </li>
+                            <li> <a href="https://www.colonialpenn.com/products/termlife-wholelife/">Term Life Insurance</a> </li>
+                            <li> <a href="https://www.colonialpenn.com/products/termlife-wholelife/">Whole Life Insurance</a> </li>
+                            <li> <a href="https://www.colonialpenn.com/products/compare/">Compare Products</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.colonialpenn.com/instantquotes/">Instant Quote</a>
+                        <ul id="siteSubNavigation"></ul>
+                    </li>
+                    <li>
+                        <a href="https://www.colonialpenn.com/faqs/">FAQ&#39;s</a>
+                        <ul id="siteSubNavigation">
+                            <li> <a href="https://www.colonialpenn.com/faqs/insurance-terms/">Life Insurance Terminology</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class='selected' href="https://www.colonialpenn.com/requestinfo/">Request Information</a>
+                        <ul id="siteSubNavigation"></ul>
+                    </li>
+                    <li>
+                        <a href="https://www.colonialpenn.com/resources/">Resource Center</a>
+                        <ul id="siteSubNavigation">
+                            <li> <a href="https://www.colonialpenn.com/resources/articles/">Articles</a> </li>
+                            <li> <a href="https://www.colonialpenn.com/resources/helpfullinks/">Helpful Links</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.colonialpenn.com/contactus/">Contact Us</a>
+                        <ul id="siteSubNavigation"></ul>
+                    </li>
+                    <li>
+                        <a href="https://www.colonialpenn.com/aboutus/">About Us</a>
+                        <ul id="siteSubNavigation"></ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div id="pageContent">
+            <img src="https://www.colonialpenn.com/media/206310/version2.jpg" width="975" alt="Request Life Insurance Information" title="Request Life Insurance Information" />
+</div>			
+ 
      <div id="root" style="display:none"></div>
  
         <script type="application/json" data-meta>{"itemId":"57e132ec3a5bfad431926da6","type":"version","destiny":"application"}</script>

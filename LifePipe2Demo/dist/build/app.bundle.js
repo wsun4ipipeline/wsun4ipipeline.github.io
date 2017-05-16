@@ -19585,11 +19585,11 @@ var App = (function (_super) {
         console.log("App.render()->props:", this.props);
         var _a = this.props, currentpage = _a.currentpage, dispatch = _a.dispatch;
         return (React.createElement("div", null,
-            React.createElement(pageItems_1.Header, { Page: currentpage }),
+            this.props.isEmbed ? "" : React.createElement(pageItems_1.Header, { Page: currentpage }),
             currentpage === state_1.EnumPage.QuoteInput || currentpage === state_1.EnumPage.QuoteInputAndSubmit ? React.createElement(QuoteInput_1.QuoteInput, { state: this.props, submitQuote: function (quoteInputData) { return dispatch(actions_1.submitQuote(quoteInputData)); } }) : "",
             currentpage === state_1.EnumPage.Results ? React.createElement(QuoteResults_1.QuoteResults, { state: this.props, onFilterUpdated: function (filterData) { return dispatch(actions_1.updateFilter(filterData)); } }) : "",
             currentpage === state_1.EnumPage.Loading ? React.createElement(QuoteLoading_1.QuoteLoading, { state: this.props }) : "",
-            React.createElement(pageItems_1.Footer, null)));
+            this.props.isEmbed ? "" : React.createElement(pageItems_1.Footer, null)));
     };
     return App;
 }(React.Component));
@@ -20799,15 +20799,20 @@ var lodash_1 = __webpack_require__(3);
 //const initResultsData: IQuoteReceivedDatas = { result: [] }
 var initGroupdResults = {};
 var prevAppSate = system_1.Storage["state"] ? JSON.parse(system_1.Storage["state"]) : "";
-var initAppState = { currentpage: state_1.EnumPage.QuoteInput, quoteInputData: prevAppSate ? prevAppSate.quoteInputData : QuoteInputData_1.DefaultQuoteInputData, groupedResults: initGroupdResults, filters: prevAppSate ? prevAppSate.filters : QuoteInputData_1.DefaultFilter, timestamp: Date.now().toString() };
+var isEmbed = system_1.Global.LP ? system_1.Global.LP.isEmbed : false;
+console.log("Global:", system_1.Global);
+var initAppState = { currentpage: state_1.EnumPage.QuoteInput, quoteInputData: prevAppSate ? prevAppSate.quoteInputData : QuoteInputData_1.DefaultQuoteInputData, groupedResults: initGroupdResults, filters: prevAppSate ? prevAppSate.filters : QuoteInputData_1.DefaultFilter, timestamp: Date.now().toString(), isEmbed: isEmbed };
 var store = redux_1.createStore(reducers_1.reducers, initAppState, redux_1.applyMiddleware(dataService_1.default));
 //for external script update React state data, current inputData only
-system_1.Global.getReactState = function () { return store.getState(); };
-system_1.Global.updatequoteInputData = function (dataObj, submitQuote) {
+system_1.Global.LP.getReactState = function () { return store.getState(); };
+system_1.Global.LP.updatequoteInputData = function (dataObj, submitQuote) {
     console.log(dataObj);
     var data = store.getState().quoteInputData;
     data = lodash_1.assign(data, dataObj);
     store.dispatch(actions_1.updateInputData(data, submitQuote));
+};
+system_1.Global.LP.setIsEmbed = function (isEmbed) {
+    //add action for UpdateIsEmbed
 };
 console.log(system_1.Global);
 ReactDOM.render(React.createElement("div", null,

@@ -1,0 +1,30 @@
+﻿.has-warning .form-control {
+    background-color: #fff;
+}
+
+.radio-group .btn-warning,
+.radio-group .btn-warning:focus,
+.radio-group .btn-warning:hover,
+.checkbox-group .btn-warning,
+.checkbox-group .btn-warning:focus,
+.checkbox-group .btn-warning:hover {
+    background-color: #fff;
+}
+
+.html,
+body,
+.runtime-body,
+.runtime-root-wrapper,
+.runtime-container {
+    height: auto;
+}
+
+    .runtime-body .runtime-item {
+        margin-bottom: 5px;
+    }
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+

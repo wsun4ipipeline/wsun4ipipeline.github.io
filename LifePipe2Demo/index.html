@@ -55,7 +55,7 @@
                // $(this).onchange();
                
                 let data = { dateOfBirth: new Date(picker.startDate.format('YYYY-MM-DD')) };
-                window.global.updatequoteInputData(data,false);
+                window.global.LP.updatequoteInputData(data,false);
             });
 
             $('input[name="dob"]').on('cancel.daterangepicker', function (ev, picker) {
