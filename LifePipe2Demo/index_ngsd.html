@@ -73,7 +73,7 @@
 
 
         window.global = window.global || {};
-        global.LP = global.App || {};
+        global.LP =  {};
         global.LP.isEmbed = true;
         global.App = global.App || {};
 
@@ -188,6 +188,10 @@
                 console.log(ex);
             }
         }
+
+        global.LP.GotoProduct = function (name, dataItem) {
+            console.log('Global.LP.GotoProduct:', name, dataItem);
+        };
     </script>
     <!-- SCRIPTS -->
 <script src="ngsd/runtime-c964f4eae0366bf7e983.js"></script>
